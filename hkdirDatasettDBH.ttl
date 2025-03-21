@@ -16,9 +16,9 @@ _:contactPoint a vcard:Organization ;
   .
 
 <https://data.hkdir.no/datasets/dbh/uh/studentdata/soknadsdata> a dcat:Dataset ;
-  dct:title "Kunstig intelligens - oversikt over prosjekter i offentlig sektor"@nb ,
-            "Kunstig intelligens - oversikt over prosjekt i offentleg sektor"@nn ,
-            "Artificial intelligence - overview of projects in the public sector"@en ;
+   dct:title "Søknadsdata"@nb ,
+             "Søknadsdata"@nn ,
+             "Application data"@en ;
   dct:description "Dette er søkere til høyere utdanning og deres søknadsprioriteringer."@nb ,
                    "Dette er søkjere til høyere utdanning og deira søknadsprioriteringer"@nn ,
                    "Application for higher education."@en ;
@@ -33,7 +33,7 @@ _:contactPoint a vcard:Organization ;
   foaf:page <https://dbh.hkdir.no/datainnhold/tabell-dokumentasjon/379> ;
   .
 
-<https://data.hkdir.no/datasets/distribution> a dcat:Distribution ;
+<https://data.digdir.no/datasets/ai_projects_norwegian_state_distribution> a dcat:Distribution ;
   dcat:accessURL <https://github.com/HKDIR-DBH/felles_datakatalog/blob/master/HK-DIR/STAT/DBH/Studentdata/s%C3%B8knadsdata_uh_tabell_beskrivelse.json> ;
   dct:description "CSV-fil med beskrivelse til soknadsdata"@nb ;
   dct:issued "2025-03-21"^^xsd:date ;
