@@ -1,0 +1,246 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dbh: <https://data.dbh.no/hyu/> .
+@prefix loc: <https://data.dbh.no/location/> .
+@prefix theme: <http://publications.europa.eu/resource/authority/data-theme/> .
+
+dbh:datasetseries a dcat:DatasetSeries ;
+    dct:title "DBH-HYU datasettserie"@nb ;
+    dct:description "Datasettserie som representerer alle tabeller rapportert til DBH-HYU"@nb ;
+    dct:publisher <https://data.dbh.no/organization/hkdir> ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt ;
+    dcat:hasPart dbh:organisasjon ;
+    dcat:hasPart dbh:studiested ;
+    dcat:hasPart dbh:studietilbud ;
+    dcat:hasPart dbh:emne ;
+    dcat:hasPart dbh:aktive-studenter ;
+    dcat:hasPart dbh:avlagte-kvalifikasjoner ;
+    dcat:hasPart dbh:student-fullfort-utdanning ;
+    dcat:hasPart dbh:student-gjennomforing ;
+    dcat:hasPart dbh:student-karakterer ;
+    dcat:hasPart dbh:student-opptak ;
+    dcat:hasPart dbh:student-sokere ;
+    dcat:hasPart dbh:student-soknadsgrunnlag ;
+    dcat:hasPart dbh:student-vurdering ;
+    dcat:hasPart dbh:undervisningspersonell ;
+    dcat:hasPart dbh:undervisningspersonell-arsverk ;
+    dcat:hasPart dbh:undervisningspersonell-kompetanse ;
+    dcat:hasPart dbh:undervisningspersonell-lonn ;
+    dcat:hasPart dbh:undervisningspersonell-fravaer ;
+    dcat:hasPart dbh:undervisningspersonell-vurdering ;
+    dcat:hasPart dbh:okonomi-inntekter ;
+    dcat:hasPart dbh:okonomi-kostnader ;
+    dcat:hasPart dbh:okonomi-investeringer .
+
+dbh:kontaktpunkt a vcard:Kind ;
+    vcard:fn "HK-dir – Kontaktpunkt for DBH-HYU"@nb ;
+    vcard:hasEmail <mailto:kontakt@hkdir.no> ;
+    vcard:hasURL <https://fagskole.hkdir.no/kontakt> .
+
+loc:NO a dct:Location ;
+    skos:prefLabel "Norge"@nb ;
+    dct:identifier "NO" .
+
+dbh:organisasjon a dcat:Dataset ;
+    dct:title "Organisasjon (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Organisasjon' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:studiested a dcat:Dataset ;
+    dct:title "Studiested (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Studiested' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:studietilbud a dcat:Dataset ;
+    dct:title "Studietilbud (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Studietilbud' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:emne a dcat:Dataset ;
+    dct:title "Emne (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Emne' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:aktive-studenter a dcat:Dataset ;
+    dct:title "Aktive studenter (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Aktive studenter' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:avlagte-kvalifikasjoner a dcat:Dataset ;
+    dct:title "Avlagte kvalifikasjoner (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Avlagte kvalifikasjoner' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:student-fullfort-utdanning a dcat:Dataset ;
+    dct:title "Student fullført utdanning (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Student fullført utdanning' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:student-gjennomforing a dcat:Dataset ;
+    dct:title "Student gjennomføring (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Student gjennomføring' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:student-karakterer a dcat:Dataset ;
+    dct:title "Student karakterer (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Student karakterer' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:student-opptak a dcat:Dataset ;
+    dct:title "Student opptak (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Student opptak' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:student-sokere a dcat:Dataset ;
+    dct:title "Student søkere (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Student søkere' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:student-soknadsgrunnlag a dcat:Dataset ;
+    dct:title "Student søknadsgrunnlag (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Student søknadsgrunnlag' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:student-vurdering a dcat:Dataset ;
+    dct:title "Student vurdering (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Student vurdering' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:undervisningspersonell a dcat:Dataset ;
+    dct:title "Undervisningspersonell (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Undervisningspersonell' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:undervisningspersonell-arsverk a dcat:Dataset ;
+    dct:title "Undervisningspersonell årsverk (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Undervisningspersonell årsverk' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:undervisningspersonell-kompetanse a dcat:Dataset ;
+    dct:title "Undervisningspersonell kompetanse (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Undervisningspersonell kompetanse' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:undervisningspersonell-lonn a dcat:Dataset ;
+    dct:title "Undervisningspersonell lønn (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Undervisningspersonell lønn' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:undervisningspersonell-fravaer a dcat:Dataset ;
+    dct:title "Undervisningspersonell fravær (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Undervisningspersonell fravær' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:undervisningspersonell-vurdering a dcat:Dataset ;
+    dct:title "Undervisningspersonell vurdering (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Undervisningspersonell vurdering' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:okonomi-inntekter a dcat:Dataset ;
+    dct:title "Økonomi inntekter (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Økonomi inntekter' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:okonomi-kostnader a dcat:Dataset ;
+    dct:title "Økonomi kostnader (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Økonomi kostnader' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
+
+dbh:okonomi-investeringer a dcat:Dataset ;
+    dct:title "Økonomi investeringer (DBH-HYU)"@nb ;
+    dct:description "Datasett for tabellen 'Økonomi investeringer' rapportert til DBH-HYU"@nb ;
+    dcat:inSeries dbh:datasetseries ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt .
