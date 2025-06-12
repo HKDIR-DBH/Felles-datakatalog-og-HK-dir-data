@@ -1,0 +1,1 @@
+Data som omhandler doktorgrader

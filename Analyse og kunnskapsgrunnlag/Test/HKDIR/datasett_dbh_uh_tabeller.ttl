@@ -1,0 +1,338 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbh: <https://data.dbh.no/dataset/> .
+@prefix : <https://data.dbh.no/> .
+
+dbh:series a dcat:DatasetSeries ;
+  dct:title "DBH datasettserie"@nb ;
+  dct:description "Samling av datasett fra Database for statistikk om høyere utdanning (DBH)."@nb ;
+  dct:publisher <https://data.dbh.no/organization/dbh> ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt ;
+  dcat:hasPart dbh:organisasjon ;
+  dcat:hasPart dbh:avdeling ;
+  dcat:hasPart dbh:organisasjonsenheter ;
+  dcat:hasPart dbh:campuser ;
+  dcat:hasPart dbh:studietilbud ;
+  dcat:hasPart dbh:studieprogram ;
+  dcat:hasPart dbh:emner ;
+  dcat:hasPart dbh:kvalifikasjoner ;
+  dcat:hasPart dbh:studieplasser ;
+  dcat:hasPart dbh:studieretning ;
+  dcat:hasPart dbh:fellesgrader ;
+  dcat:hasPart dbh:studentdata ;
+  dcat:hasPart dbh:soknadsdata---kompetanse-og-poeng ;
+  dcat:hasPart dbh:registrerte-studenter ;
+  dcat:hasPart dbh:emneoppmeldte-studenter ;
+  dcat:hasPart dbh:eksamen ;
+  dcat:hasPart dbh:oppnadde-kvalifikasjoner ;
+  dcat:hasPart dbh:utvekslingsstudenter-og-studenter-under-kvoteprogram ;
+  dcat:hasPart dbh:gjennomforing-iht-avtalt-utdanningsplan ;
+  dcat:hasPart dbh:uteksaminerte-ppu-kandidater-fagbakgrunn ;
+  dcat:hasPart dbh:uteksaminerte-grunnskolelaerere---fagvalg ;
+  dcat:hasPart dbh:skikkethetsvurdering ;
+  dcat:hasPart dbh:oppdatering-av-fodselsnummer ;
+  dcat:hasPart dbh:studenter-som-betaler-full-studieavgift ;
+  dcat:hasPart dbh:avlagte-doktorgrader ;
+  dcat:hasPart dbh:personer-i-doktorgradsprogrammer ;
+  dcat:hasPart dbh:personer-i-doktorgradsprogrammer---ssb ;
+  dcat:hasPart dbh:saldobalanse-fom-2013 ;
+  dcat:hasPart dbh:kostnadssteder-til-fou-statistikken ;
+  dcat:hasPart dbh:klassifisering-av-finansieringskilder-til-fou-statistikken ;
+  dcat:hasPart dbh:belop-per-finansieringskilde-og-kostnadssted-til-fou-statistikken ;
+  dcat:hasPart dbh:internhandel-til-fou-statistikken ;
+  dcat:hasPart dbh:investeringer-til-fou-statistikken ;
+  dcat:hasPart dbh:gjennomsnittslonn-til-fou-statistikken ;
+  dcat:hasPart dbh:vitenskapelig-publisering ;
+  dcat:hasPart dbh:tilsatte ;
+  dcat:hasPart dbh:innstegsstillinger ;
+  dcat:hasPart dbh:areal ;
+  dcat:hasPart dbh:bibliotekindikatorer ;
+  dcat:hasPart dbh:mottatte-forretningsideer .
+
+:kontaktpunkt a <http://www.w3.org/2006/vcard/ns#Kind> ;
+  <http://www.w3.org/2006/vcard/ns#fn> "DBH – Kontaktpunkt for statistikk"@nb ;
+  <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:kontakt@dbh.no> ;
+  <http://www.w3.org/2006/vcard/ns#hasURL> <https://www.dbh.no/kontakt> .
+
+dbh:organisasjon a dcat:Dataset ;
+  dct:title "Organisasjon"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:avdeling a dcat:Dataset ;
+  dct:title "Avdeling"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:organisasjonsenheter a dcat:Dataset ;
+  dct:title "Organisasjonsenheter"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:campuser a dcat:Dataset ;
+  dct:title "Campuser"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:studietilbud a dcat:Dataset ;
+  dct:title "Studietilbud"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:studieprogram a dcat:Dataset ;
+  dct:title "Studieprogram"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:emner a dcat:Dataset ;
+  dct:title "Emner"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:kvalifikasjoner a dcat:Dataset ;
+  dct:title "Kvalifikasjoner"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:studieplasser a dcat:Dataset ;
+  dct:title "Studieplasser"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:studieretning a dcat:Dataset ;
+  dct:title "Studieretning"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:fellesgrader a dcat:Dataset ;
+  dct:title "Fellesgrader"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:studentdata a dcat:Dataset ;
+  dct:title "Studentdata"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:soknadsdata---kompetanse-og-poeng a dcat:Dataset ;
+  dct:title "Søknadsdata – kompetanse og poeng"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:registrerte-studenter a dcat:Dataset ;
+  dct:title "Registrerte studenter"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:emneoppmeldte-studenter a dcat:Dataset ;
+  dct:title "Emneoppmeldte studenter"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:eksamen a dcat:Dataset ;
+  dct:title "Eksamen"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:oppnadde-kvalifikasjoner a dcat:Dataset ;
+  dct:title "Oppnådde kvalifikasjoner"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:utvekslingsstudenter-og-studenter-under-kvoteprogram a dcat:Dataset ;
+  dct:title "Utvekslingsstudenter og studenter under kvoteprogram"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:gjennomforing-iht-avtalt-utdanningsplan a dcat:Dataset ;
+  dct:title "Gjennomføring iht. avtalt utdanningsplan"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:uteksaminerte-ppu-kandidater-fagbakgrunn a dcat:Dataset ;
+  dct:title "Uteksaminerte PPU-kandidater, fagbakgrunn"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:uteksaminerte-grunnskolelaerere---fagvalg a dcat:Dataset ;
+  dct:title "Uteksaminerte grunnskolelærere - fagvalg"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:skikkethetsvurdering a dcat:Dataset ;
+  dct:title "Skikkethetsvurdering"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:oppdatering-av-fodselsnummer a dcat:Dataset ;
+  dct:title "Oppdatering av fødselsnummer"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:studenter-som-betaler-full-studieavgift a dcat:Dataset ;
+  dct:title "Studenter som betaler full studieavgift"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:avlagte-doktorgrader a dcat:Dataset ;
+  dct:title "Avlagte doktorgrader"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:personer-i-doktorgradsprogrammer a dcat:Dataset ;
+  dct:title "Personer i doktorgradsprogrammer"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:personer-i-doktorgradsprogrammer---ssb a dcat:Dataset ;
+  dct:title "Personer i doktorgradsprogrammer - SSB"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:saldobalanse-fom-2013 a dcat:Dataset ;
+  dct:title "Saldobalanse f.o.m. 2013"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:kostnadssteder-til-fou-statistikken a dcat:Dataset ;
+  dct:title "Kostnadssteder til FoU-statistikken"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:klassifisering-av-finansieringskilder-til-fou-statistikken a dcat:Dataset ;
+  dct:title "Klassifisering av finansieringskilder til FoU-statistikken"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:belop-per-finansieringskilde-og-kostnadssted-til-fou-statistikken a dcat:Dataset ;
+  dct:title "Beløp per finansieringskilde og kostnadssted til FoU-statistikken"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:internhandel-til-fou-statistikken a dcat:Dataset ;
+  dct:title "Internhandel til FoU-statistikken"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:investeringer-til-fou-statistikken a dcat:Dataset ;
+  dct:title "Investeringer til FoU-statistikken"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:gjennomsnittslonn-til-fou-statistikken a dcat:Dataset ;
+  dct:title "Gjennomsnittslønn til FoU-statistikken"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:vitenskapelig-publisering a dcat:Dataset ;
+  dct:title "Vitenskapelig publisering"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:tilsatte a dcat:Dataset ;
+  dct:title "Tilsatte"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:innstegsstillinger a dcat:Dataset ;
+  dct:title "Innstegsstillinger"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:areal a dcat:Dataset ;
+  dct:title "Areal"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:bibliotekindikatorer a dcat:Dataset ;
+  dct:title "Bibliotekindikatorer"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .
+
+dbh:mottatte-forretningsideer a dcat:Dataset ;
+  dct:title "Mottatte forretningsideer"@nb ;
+  dcat:inSeries dbh:series ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDU> ;
+  dcat:contactPoint :kontaktpunkt .

@@ -1,0 +1,32 @@
+
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/> .
+
+ex:populationSeries a dcat:DatasetSeries ;
+    dct:title "Befolkningsstatistikk for Norge"@nb ;
+    dct:description "En årlig serie med datasett som viser befolkningsstatistikk for Norge."@nb ;
+    dct:publisher ex:StatistiskSentralbyra ;
+    dcat:hasPart ex:population2023 , ex:population2024 .
+
+ex:population2023 a dcat:Dataset ;
+    dct:title "Befolkningsstatistikk 2023"@nb ;
+    dct:issued "2024-03-01"^^xsd:date ;
+    dcat:inSeries ex:populationSeries ;
+    dcat:distribution ex:population2023-csv .
+
+ex:population2023-csv a dcat:Distribution ;
+    dct:format "text/csv" ;
+    dcat:downloadURL <http://example.org/data/population2023.csv> .
+
+ex:population2024 a dcat:Dataset ;
+    dct:title "Befolkningsstatistikk 2024"@nb ;
+    dct:issued "2025-03-01"^^xsd:date ;
+    dcat:inSeries ex:populationSeries ;
+    dcat:distribution ex:population2024-csv .
+
+ex:population2024-csv a dcat:Distribution ;
+    dct:format "text/csv" ;
+    dcat:downloadURL <http://example.org/data/population2024.csv> .

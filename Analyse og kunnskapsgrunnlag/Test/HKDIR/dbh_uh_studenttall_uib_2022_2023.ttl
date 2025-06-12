@@ -1,0 +1,55 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dbh: <https://data.dbh.no/dataset/> .
+@prefix loc: <https://data.dbh.no/location/> .
+@prefix theme: <http://publications.europa.eu/resource/authority/data-theme/> .
+
+dbh:studenttall-uib-series a dcat:DatasetSeries ;
+    dct:title "Studenttall ved Universitetet i Bergen"@nb ;
+    dct:description "Datasettserie som viser antall registrerte studenter ved Universitetet i Bergen per år."@nb ;
+    dct:publisher <https://data.dbh.no/organization/dbh> ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt ;
+    dcat:hasPart dbh:studenttall-uib-2022 , dbh:studenttall-uib-2023 .
+
+dbh:kontaktpunkt a vcard:Kind ;
+    vcard:fn "DBH – Kontaktpunkt for studentstatistikk"@nb ;
+    vcard:hasEmail <mailto:kontakt@dbh.no> ;
+    vcard:hasURL <https://www.dbh.no/kontakt> .
+
+loc:NO a dct:Location ;
+    skos:prefLabel "Norge"@nb ;
+    dct:identifier "NO"^^xsd:string .
+
+dbh:studenttall-uib-2022 a dcat:Dataset ;
+    dct:title "Studenttall ved UiB 2022"@nb ;
+    dct:issued "2023-03-01"^^xsd:date ;
+    dcat:inSeries dbh:studenttall-uib-series ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt ;
+    dcat:distribution dbh:studenttall-uib-2022-csv .
+
+dbh:studenttall-uib-2022-csv a dcat:Distribution ;
+    dct:format "text/csv"^^xsd:string ;
+    dcat:downloadURL <https://data.dbh.no/downloads/studenttall-uib-2022.csv> .
+
+dbh:studenttall-uib-2023 a dcat:Dataset ;
+    dct:title "Studenttall ved UiB 2023"@nb ;
+    dct:issued "2024-03-01"^^xsd:date ;
+    dcat:inSeries dbh:studenttall-uib-series ;
+    dcat:theme theme:EDU ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint dbh:kontaktpunkt ;
+    dcat:distribution dbh:studenttall-uib-2023-csv .
+
+dbh:studenttall-uib-2023-csv a dcat:Distribution ;
+    dct:format "text/csv" ^^xsd:string;
+    dcat:downloadURL <https://data.dbh.no/downloads/studenttall-uib-2023.csv> .

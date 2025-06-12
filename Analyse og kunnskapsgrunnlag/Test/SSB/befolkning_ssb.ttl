@@ -1,0 +1,56 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ssb: <https://data.ssb.no/dataset/> .
+@prefix loc: <https://data.ssb.no/location/> .
+@prefix theme: <http://publications.europa.eu/resource/authority/data-theme/> .
+
+ssb:population-series a dcat:DatasetSeries ;
+    dct:title "Befolkningsstatistikk for Norge"@nb ;
+    dct:description "En årlig serie med datasett som viser befolkningsstatistikk for Norge."@nb ;
+    dct:publisher <https://data.ssb.no/organization/ssb> ;
+    dcat:theme theme:POP ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint ssb:kontaktpunkt ;
+    dcat:hasPart ssb:population-2023 , ssb:population-2024 .
+
+ssb:kontaktpunkt a vcard:Kind ;
+    vcard:fn "Statistisk sentralbyrå – Kontaktpunkt for befolkningsstatistikk"@nb ;
+    vcard:hasEmail <mailto:kontakt@ssb.no> ;
+    vcard:hasURL <https://www.ssb.no/kontakt> .
+
+loc:NO a dct:Location ;
+    skos:prefLabel "Norge"@nb ;
+    dct:identifier "NO"^^xsd:string .
+
+ssb:population-2023 a dcat:Dataset ;
+    dct:title "Befolkningsstatistikk 2023"@nb ;
+    dct:issued "2024-03-01"^^xsd:date ;
+    dcat:inSeries ssb:population-series ;
+    dcat:theme theme:POP ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint ssb:kontaktpunkt ;
+    dcat:distribution ssb:population-2023-csv .
+
+ssb:population-2023-csv a dcat:Distribution ;
+    dct:format "text/csv"^^xsd:string ;
+    dcat:downloadURL <https://data.ssb.no/downloads/population-2023.csv> .
+
+ssb:population-2024 a dcat:Dataset ;
+    dct:title "Befolkningsstatistikk 2024"@nb ;
+    dct:issued "2025-03-01"^^xsd:date ;
+    dcat:inSeries ssb:population-series ;
+    dcat:theme theme:POP ;
+    dct:spatial loc:NO ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:contactPoint ssb:kontaktpunkt ;
+    dcat:distribution ssb:population-2024-csv .
+
+ssb:population-2024-csv a dcat:Distribution ;
+    dct:format "text/csv"^^xsd:string ;
+    dcat:downloadURL <https://data.ssb.no/downloads/population-2024.csv> .
